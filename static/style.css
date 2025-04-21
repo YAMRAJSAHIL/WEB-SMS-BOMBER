@@ -1,1 +1,265 @@
+/* Modern Neon Theme */
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
 
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+
+.neon-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.neon-title {
+    color: #fff;
+    text-shadow: 
+        0 0 10px #ff0000,
+        0 0 20px #ff0000,
+        0 0 30px #ff0000;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stop-button {
+    width: 200px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #ff0000, #ff0055);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 
+        0 0 15px rgba(255, 0, 0, 0.7),
+        0 0 25px rgba(255, 0, 85, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    min-width: 140px;
+}
+
+.stop-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 0 25px rgba(255, 0, 0, 0.9),
+        0 0 35px rgba(255, 0, 0, 0.7);
+}
+
+.neon-button {
+    width: 220px;
+    background: linear-gradient(135deg, #ff0055, #0066ff);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    margin-top: 0;
+    white-space: nowrap;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 
+        0 0 15px rgba(255, 0, 85, 0.7),
+        0 0 25px rgba(0, 102, 255, 0.5);
+    min-width: 140px;
+}
+
+.neon-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 0 25px rgba(255, 0, 85, 0.9),
+        0 0 35px rgba(0, 102, 255, 0.7);
+}
+
+.neon-button:active {
+    transform: translateY(1px);
+}
+
+.neon-subtitle {
+    color: #00f7ff;
+    text-shadow: 0 0 10px #0066ff;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+.bomber-box {
+    background: rgba(20, 20, 40, 0.9);
+    border: 2px solid #ff0055;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 
+        0 0 20px #ff0055,
+        0 0 40px rgba(255, 0, 85, 0.3) inset;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.neon-label {
+    display: block;
+    color: #00f7ff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #0066ff;
+}
+
+.neon-input {
+    width: 95%;
+    margin-left: -10px;
+    padding: 15px;
+    background: rgba(0, 0, 30, 0.8);
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.3);
+    transition: all 0.3s;
+}
+
+.neon-input:focus {
+    outline: none;
+    border-color: #ff0055;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+}
+
+
+.result-box, .stats-box, .requests-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 30, 0.7);
+    text-align: left;
+}
+
+.stats-box {
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.3);
+}
+
+.requests-box {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 2px solid #ff9900;
+    box-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-label {
+    color: #00f7ff;
+}
+
+.stat-value {
+    font-weight: bold;
+}
+
+.success {
+    color: #00ff55;
+    text-shadow: 0 0 5px rgba(0, 255, 85, 0.5);
+}
+
+.error {
+    color: #ff0055;
+    text-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
+}
+
+.loading {
+    color: #00f7ff;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.footer {
+    margin-top: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    color: #ff0055;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.highlight:hover {
+    color: #00f7ff;
+    text-decoration: underline;
+}
+
+/* Scrollbar styling */
+.requests-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.requests-box::-webkit-scrollbar-track {
+    background: rgba(0, 0, 20, 0.5);
+    border-radius: 4px;
+}
+
+.requests-box::-webkit-scrollbar-thumb {
+    background: #ff0055;
+    border-radius: 4px;
+}
+
+.requests-box::-webkit-scrollbar-thumb:hover {
+    background: #00f7ff;
+}
